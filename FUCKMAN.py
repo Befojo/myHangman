@@ -1,5 +1,7 @@
 #! /usr/bin/python3
 import random
+import time
+import os
 FUCKMAN = (
 """
 This is evil black man.
@@ -106,6 +108,12 @@ he will start to use you.
     |_____|    1111                                                             |
 
 """)
+def fuck_him():
+    while True:
+        for image in range(1,4):
+            print(FUCKMAN[image])
+            time.sleep()
+            os.system('clear')
 MISTAKES = len(FUCKMAN) - 1
 WORDS = ("RONALDINHO", "BECKHAM", "BRADY", "DURANT", "CROSBY")
 puzzle = random.choice(WORDS)
@@ -139,9 +147,16 @@ while mistake < MISTAKES and progress != puzzle:
     if mistake == MISTAKES:
         print (FUCKMAN[mistake])
         print ("You were fucked!")
+        fuck_him()
     else:
         print ("You are champion! It's really", puzzle, "!")
 
+    def fuck_him():
+        while True:
+            for image in range(1,5):
+                print(FUCKMAN[image])
+                time.sleep(0.2)
+                os.system('clear')
 
 
 
