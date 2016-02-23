@@ -108,12 +108,6 @@ he will start to use you.
     |_____|    1111                                                             |
 
 """)
-def fuck_him():
-    while True:
-        for image in range(1,4):
-            print(FUCKMAN[image])
-            time.sleep()
-            os.system('clear')
 MISTAKES = len(FUCKMAN) - 1
 WORDS = ("RONALDINHO", "BECKHAM", "BRADY", "DURANT", "CROSBY")
 puzzle = random.choice(WORDS)
